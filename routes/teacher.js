@@ -12,7 +12,7 @@ router.post("/",async function(req,res){
     res.send(result);
 })
 
-router.get("/teacher",async function(req,res){
+router.get("/",async function(req,res){
     const teacher = await getAllTeachers()
     console.log(teacher)
     res.send(teacher);
